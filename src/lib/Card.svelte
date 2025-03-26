@@ -4,7 +4,7 @@
   export let flipped = false;
 </script>
 
-<div class="perspective relative aspect-[3/2] h-auto w-[40vw] cursor-pointer">
+<div class="perspective relative h-[400px] w-[600px] cursor-pointer break-normal">
   <div
     class={`transform-style-preserve-3d relative h-full w-full transition-transform duration-300 ${flipped ? 'rotate-y-180' : ''}`}
   >
