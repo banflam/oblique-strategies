@@ -4,17 +4,17 @@
   export let flipped = false;
 </script>
 
-<div class="perspective relative h-[350px] w-[500px] cursor-pointer">
+<div class="perspective relative h-[350px] w-[500px] cursor-pointer break-normal">
   <div
     class={`transform-style-preserve-3d relative h-full w-full transition-transform duration-300 ${flipped ? 'rotate-y-180' : ''}`}
   >
     <div
-      class="backface-hidden absolute flex h-full w-full items-center justify-center break-words rounded-2xl bg-black p-4 text-center text-2xl text-white shadow-md"
+      class="backface-hidden absolute flex h-full w-full items-center justify-center rounded-2xl bg-black p-4 text-center text-2xl text-white shadow-md"
     >
       {front}
     </div>
     <div
-      class="backface-hidden rotate-y-180 absolute flex h-full w-full items-center justify-center break-words rounded-2xl bg-gray-100 p-4 text-center text-2xl shadow-md"
+      class="backface-hidden rotate-y-180 absolute flex h-full w-full items-center justify-center rounded-2xl bg-gray-100 p-4 text-center text-2xl shadow-md"
     >
       {back}
     </div>
